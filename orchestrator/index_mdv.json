@@ -1,0 +1,54 @@
+{
+  "configs": {
+    "svmlight_train_input": "data/credit_normalized.svmlight",
+    "svmlight_validation_input": "data/validation/credit_normalized.svmlight",
+    "svmlight_test_input": "data/test/credit_normalized.svmlight",
+    "result_classifiers": "result/classify/tabulation_{timestamp}.csv",
+    "result_conf_mat": "result/conf_mat/"
+  },
+  "experiments": [
+    {
+      "classifier": "tree",
+      "parameters": {
+        "criterion": "entropy",
+        "max_depth": 8
+      }
+    },
+    {
+      "classifier": "naive_bayes",
+      "parameters": {}
+    },
+    {
+      "classifier": "lda",
+      "parameters": {}
+    },
+    {
+      "classifier": "logistic_regression",
+      "parameters": {}
+    },
+    {
+      "classifier": "perceptron",
+      "parameters": {}
+    },
+    {
+      "classifier": "svm",
+      "parameters": {}
+    },
+    {
+      "classifier": "knn3",
+      "parameters": {}
+    },
+	{
+      "classifier": "knn5",
+      "parameters": {}
+    },
+	{
+      "classifier": "knn7",
+      "parameters": {}
+    },
+    {
+      "classifier": "mlp",
+      "parameters": {}
+    }
+  ]
+}
